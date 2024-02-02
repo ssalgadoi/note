@@ -1,6 +1,7 @@
 
 import './App.css';
 import Logo from './componets/logo';
+import Note from './componets/note';
 
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
       <Logo />
       <div className='main-list'>
         <h1> Mis Tareas</h1>
+        <Note />
       </div>
+      
     </div>
   );
 }
