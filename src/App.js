@@ -1,16 +1,14 @@
 
 import './App.css';
-import Logo from './img/logo.png'
+import Logo from './componets/logo';
+
 
 function App() {
   return (
     <div className='app-note'>
-      <div className='logo-container'>
-        <img 
-          src={ Logo } 
-          className='logo' 
-          alt='Logo' 
-        />
+      <Logo />
+      <div className='main-list'>
+        <h1> Mis Tareas</h1>
       </div>
     </div>
   );
