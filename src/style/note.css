@@ -30,3 +30,12 @@
   height: 25px;
   margin: 5px;
 }
+
+/* Note completed */
+
+
+.container-note.completed {
+  background-color: #5a01a7;
+  text-decoration: line-through;
+  
+}

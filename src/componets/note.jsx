@@ -3,9 +3,9 @@ import '../style/note.css';
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
 
-function Note({ text }) {
+function Note({ text, completed }) {
   return (
-    <div className="container-note">
+    <div className={ completed ? "container-note completed" : "container-note"}>
       <div className="text-note">
         { text }
       </div>
