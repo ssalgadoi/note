@@ -1,7 +1,8 @@
 
 import './App.css';
 import Logo from './componets/logo';
-import Note from './componets/note';
+// import Note from './componets/note';
+import NoteForm from './componets/noteform';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <Logo />
       <div className='main-list'>
         <h1> Mis Tareas</h1>
-        <Note />
+        <NoteForm />
+        {/* <Note /> */}
       </div>
       
     </div>
