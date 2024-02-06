@@ -4,18 +4,20 @@ import NoteForm from "./noteform";
 import Note from "./note";
 
 function NoteLists() {
-
   const [notes, setNote] = useState([]);
 
   const addNote = note => {
-    console.log("Tarea agregada");
-    console.log(note);
+    if (note.text.trim()) {
+      note.text = note.text.trim();
+      const updatedNote = [note, ...notes];
+      setNote( updatedNote );
+    }
   }
 
 
   return (
     <>
-    <NoteForm />
+    <NoteForm onSubmit={ addNote }/>
     <div className="note-list-container">
     {
       notes.map((note) =>
