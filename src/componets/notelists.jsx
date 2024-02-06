@@ -19,6 +19,16 @@ function NoteLists() {
     setNote(updatedNote)
   }
 
+  const completeNote = id => {
+    const updatedNote = notes.map(note => {
+      if (note.id === id) {
+        note.completed = !note.completed;
+      }
+      return note;
+    });
+    setNote(updatedNote);
+  }
+
   return (
     <>
     <NoteForm onSubmit={ addNote }/>
@@ -30,6 +40,7 @@ function NoteLists() {
         id={note.id}
         text={note.text}
         completed={note.completed}
+        completeNote={ completeNote }
         deleteNote={ deleteNote }
         />
       )
