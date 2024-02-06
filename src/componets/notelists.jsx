@@ -7,7 +7,10 @@ function NoteLists() {
 
   const [notes, setNote] = useState([]);
 
-
+  const addNote = note => {
+    console.log("Tarea agregada");
+    console.log(note);
+  }
 
 
   return (
