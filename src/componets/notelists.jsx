@@ -22,6 +22,8 @@ function NoteLists() {
     {
       notes.map((note) =>
         <Note 
+        key={note.id}
+        id={note.id}
         text={note.text}
         completed={note.completed}
         />
