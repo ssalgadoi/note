@@ -14,6 +14,10 @@ function NoteLists() {
     }
   }
 
+  const deleteNote = id => {
+    const updatedNote = notes.filter(note => note.id !== id);
+    setNote(updatedNote)
+  }
 
   return (
     <>
@@ -26,6 +30,7 @@ function NoteLists() {
         id={note.id}
         text={note.text}
         completed={note.completed}
+        deleteNote={ deleteNote }
         />
       )
     }

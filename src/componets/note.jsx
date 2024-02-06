@@ -17,7 +17,7 @@ function Note({ id, text, completed, completeNote, deleteNote }) {
         <IoMdCloseCircleOutline className="icon-note" />
       </div>
     </div>
-  )
-};
+  );
+}
 
 export default Note;
